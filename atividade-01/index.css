@@ -1,0 +1,27 @@
+/* altera o formulário */
+form
+{
+    /* centraliza os inputs, labels e botão horizontalmente*/
+    display: flex;
+    align-items: center;
+    /* deixa em coluna */
+    flex-direction: column;
+    /* margem em cima para centralizar o formulário verticalmente */
+    margin-top: 10%;
+}
+
+/* altera o input */
+input
+{
+    /* tamanho */
+    width: 100px;
+    height: 20px;
+}
+
+/* altera o botão */
+button
+{
+    /* tamanho */
+    width: 100px;
+    height: 20px;
+}

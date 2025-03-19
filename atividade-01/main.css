@@ -1,0 +1,28 @@
+/* muda o body*/
+.tela
+{
+    /* ocupa 100% do body */
+    width: 100%;
+    height: 100%;
+    /* centraliza o formulario e botão (conteudo) horizontalmente */
+    display: flex;
+    align-items: center;
+    /* faz o botão e o formulário ficarem em coluna (um abaixo do outro) */
+    flex-direction: column;
+    /* espaçamento de 10px em todos os elementos */
+    gap: 10px;
+}
+
+/* muda o formulario */
+form 
+{
+    /* margem de 18% da tela em cima para centralizar verticalmente*/
+    margin-top: 18%;
+}
+
+button
+{
+    /* tamanho do botão */
+    width: 100px;
+    height: 20px;
+}

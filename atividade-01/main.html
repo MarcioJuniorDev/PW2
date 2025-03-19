@@ -8,22 +8,24 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <form action="#">
-        <!-- input para o primeiro número do usuário -->
-        <input type="number" name="txtValor1" id="txtValor1" placeholder="número">
-        <!-- input do sinal -->
-        <input type="text" placeholder="sinal" id="txtSinal" list="sinais">
-            <!-- lista das opções que o input txtSinal tem -->
-            <datalist id="sinais">
-                <option value="+">+</option>
-                <option value="-">-</option>
-                <option value="*">*</option>
-                <option value="/">/</option>
-            </datalist>
-        <!-- input do ultimo valor -->
-        <input type="number" name="txtValor2" id="txtValor2" placeholder="número">
+    <div class="tela">
+        <form action="#">
+            <!-- input para o primeiro número do usuário -->
+            <input type="number" name="txtValor1" id="txtValor1" placeholder="número">
+            <!-- input do sinal -->
+            <input type="text" placeholder="sinal" id="txtSinal" list="sinais">
+                <!-- lista das opções que o input txtSinal tem -->
+                <datalist id="sinais">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </datalist>
+            <!-- input do ultimo valor -->
+            <input type="number" name="txtValor2" id="txtValor2" placeholder="número">
+        </form>
         <!-- botão de confirmar a conta -->
         <button type="button" id="btnCalcular">Calcular</button>
-    </form>
+    </div>
 </body>
 </html>
