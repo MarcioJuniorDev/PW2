@@ -22,10 +22,12 @@ document.addEventListener("DOMContentLoaded", () =>
             let txtUsuario = document.getElementById("txtUsuario").value;
             let txtSenha = document.getElementById("txtSenha").value;
 
+            // se qualquer um dos valores for diferente do informado pelo php, ele pede para digitar novamente
             if (txtUsuario != txtUsuario_correto || txtSenha != txtSenha_correta)
             {
                 alert("usuario ou senha incorreto. tente novamente.");
             }
+            // se nenhum valor for diferente do informado, o login está correto e passa para a página principal
             else
             {
                 window.location.href="http://localhost/atividade-01/main.html";
@@ -38,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () =>
         }
     }
 
-    // executa o codigo quando o botao é apertado
+    // executa o codigo quando o botao btnAcessar é apertado
     btnAcessar.addEventListener("click", () => 
     {
         Verificar();      

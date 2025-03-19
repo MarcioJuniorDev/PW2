@@ -4,8 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
 </head>
 <body>
-    <p>a</p>
+    <form action="#">
+        <!-- input para o primeiro número do usuário -->
+        <input type="number" name="txtValor1" id="txtValor1" placeholder="número">
+        <!-- input do sinal -->
+        <input type="text" placeholder="sinal" id="txtSinal" list="sinais">
+            <!-- lista das opções que o input txtSinal tem -->
+            <datalist id="sinais">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </datalist>
+        <!-- input do ultimo valor -->
+        <input type="number" name="txtValor2" id="txtValor2" placeholder="número">
+        <!-- botão de confirmar a conta -->
+        <button type="button" id="btnCalcular">Calcular</button>
+    </form>
 </body>
 </html>
