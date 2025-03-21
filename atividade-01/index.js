@@ -16,14 +16,13 @@ document.addEventListener("DOMContentLoaded", () =>
             }
 
             // variaveis com o valor do php
-            const txtUsuario_correto = "<?=$usuario>";
-            const txtSenha_correta = "<?=$senha?>";
+            const senha = await carregou.text();
             // variaveis com o valor que o usuario digitou
             let txtUsuario = document.getElementById("txtUsuario").value;
             let txtSenha = document.getElementById("txtSenha").value;
 
             // se qualquer um dos valores for diferente do informado pelo php, ele pede para digitar novamente
-            if (txtUsuario != txtUsuario_correto || txtSenha != txtSenha_correta)
+            if (txtUsuario != senha || txtSenha != senha)
             {
                 alert("usuario ou senha incorreto. tente novamente.");
             }
