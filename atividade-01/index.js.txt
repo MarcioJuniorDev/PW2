@@ -7,22 +7,24 @@ document.addEventListener("DOMContentLoaded", () =>
         try 
         {
             // espera os dados do php carregarem
-            const carregou = await fetch("http://localhost/atividade-01/verificacao.php");
+            const carregou_usuario = await fetch("http://localhost/atividade-01/usuario.php");
+            const carregou_senha = await fetch("http://localhost/atividade-01/senha.php");
 
             // senão carregou, emite um erro
-            if (!carregou.ok)
+            if (!carregou_usuario.ok || !carregou_senha.ok)
             {
                 throw new Error("o servidor não respondeu corretamente");
             }
 
             // variaveis com o valor do php
-            const senha = await carregou.text();
+            const usuario_correto = carregou_usuario.text();
+            const senha_correta = carregou_senha.text();
             // variaveis com o valor que o usuario digitou
-            let txtUsuario = document.getElementById("txtUsuario").value;
-            let txtSenha = document.getElementById("txtSenha").value;
+            const txtUsuario = document.getElementById("txtUsuario").value;
+            const txtSenha = document.getElementById("txtSenha").value;
 
             // se qualquer um dos valores for diferente do informado pelo php, ele pede para digitar novamente
-            if (txtUsuario != senha || txtSenha != senha)
+            if (txtUsuario.value != usuario_correto.value || txtSenha.value != senha_correta.value)
             {
                 alert("usuario ou senha incorreto. tente novamente.");
             }
