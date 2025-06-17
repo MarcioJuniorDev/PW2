@@ -1,0 +1,25 @@
+{
+    "name": "etec/marcio",
+    "description": "projeto inicial",
+    "type": "project",
+    "require": {
+        "twig/twig": "^3.9",
+        "coffeecode/router": "^1.0.8"
+    },
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "Etec\\Marcio\\": "src/"
+        },
+        "files": [
+            "src/config.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "marcio",
+            "email": "marciojunior2911@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
